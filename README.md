@@ -8,4 +8,4 @@ To install:
 To run:
 - Go to 'public' directory
 - polymer serve
-- [localhost](#http://localhost:8080)
+- [localhost](http://localhost:8080)
