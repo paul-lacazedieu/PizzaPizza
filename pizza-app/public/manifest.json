@@ -1,9 +1,0 @@
-{
-  "name": "Pizzas Graulhet",
-  "short_name": "Pizzas",
-  "start_url": "/",
-  "orientation": "any",
-  "display": "standalone",
-  "theme_color": "#9C27B0",
-  "background_color": "#9C27B0"
-}
