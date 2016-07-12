@@ -85,12 +85,12 @@
       id="query"
       app-name="pizza"
       path="/pizzas/{{pizzeria.$key}}"
-      data="{{pizzas}}">
+      data="{{pizzeria.pizzas}}">
     </firebase-query>
 
     <app-indexeddb-mirror
-      key="pizzas"
-      data="{{pizzas}}"
+      key="pizzas_{{pizzeria.$key}}"
+      data="{{pizzeria.pizzas}}"
       persisted-data="{{persistedPizzas}}">
     </app-indexeddb-mirror>
 
@@ -134,7 +134,7 @@
           type: Object,
         },
         pizzas:{
-          type: Array
+          type: Array,
         },
         animationConfig: {
           value: function(){

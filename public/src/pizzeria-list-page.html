@@ -160,7 +160,7 @@
                 animation: 'appear-from-bottom-animation',
                 nodes: Polymer.dom(this.root).querySelectorAll('.card'),
                 nodeDelay: 100,
-                timing: {delay: 0, duration: 500}
+                timing: {delay: 0, duration: 400}
               }
             }
           }
@@ -172,6 +172,7 @@
       },
 
       showPizzas: function(e) {
+        e.model.pizzeria.pizzas = [];
         this.pizzeriaToShow = e.model.pizzeria;
         this.fire('show-pizzas-list');
       },

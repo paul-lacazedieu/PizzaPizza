@@ -71,11 +71,13 @@
       },
       showPizzas: function(){
         var self = this;
-        this.$.pizzasList.displayFrom(this.$.pizzeriasList.selectedPizzeria);
         this.selectedPage = 1;
         setTimeout(function(){
-          self.$.pizzasList.animateList();
-        }, 250);
+          self.$.pizzasList.displayFrom(self.$.pizzeriasList.selectedPizzeria);
+          setTimeout(function(){
+            self.$.pizzasList.animateList();
+          }, 200);
+        }, 200)
       }
 
     });
